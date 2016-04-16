@@ -1,0 +1,17 @@
+@startuml
+title Conditional - Updown game
+start
+:computer make random number x;
+repeat
+:player input number y;
+if (x==y) then(x==y)
+    :print "Good! You win";
+elseif (x<y) then (x<y)
+    :print "Down!";
+else (x>y)
+    :print "Up!";
+endif
+repeat while(10)
+:print x;
+stop
+@enduml
